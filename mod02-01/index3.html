@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	<form>
-		<fieldset>
-			<legend>Your Details</legend>
-			<label>Name: <input type="text" name="name"/></label>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="assets/style.css" />
+		<title>Activity 1</title>
+	</head>
+	<body>
+		<form class="input">
+			<fieldset>
+				<legend>Your Details</legend>
+				<label>Name: <input type="text" name="name"/></label>
+				<br/>
+				<label>Email: <input type="email" name="email"/></label>
+			</fieldset>
 			<br/>
-			<label>Email: <input type="email" name="email"/></label>
-		</fieldset>
-		<br/>
-		<br/>
-		<fieldset>
-			<legend>Your Review</legend>
-			<legend>How did you hear about us? 
-				<select name="source"> 
+			<br/>
+			<fieldset>
+				<legend>Your Review</legend>
+				<label for="source">How did you hear about us?</label>
+				<select id="source" name="source"> 
 					<option value="google" selected>Google</option>
 					<option value="facebook">Facebook</option>
 					<option value="twitter">Twitter</option>
 				</select>
-			</legend>
-			<br/>
-			<legend>Would you visit again?
 				<br/>
-				<input type="radio" name="answer" value="yes" />Yes
-				<input type="radio" name="answer" value="no" />No
-				<input type="radio" name="answer" value="maybe" />Maybe
-			</legend>
-			<br/>
-			<label>Comments:
 				<br/>
-				<textarea></textarea>	
-			</label>
-			<br/>
-			<input type="checkbox" name="sign" value="yes" checked /> Sign me up for email updates
-			<br/>
-			<input type="submit" value="Submit review" />
-		</fieldset>
-		
+				<label for="answer">Would you visit again?</label>
+				<br/>
+				<input type="radio" id="answer" name="answer" value="yes" checked />Yes
+				<input type="radio" id="answer" name="answer" value="no" />No
+				<input type="radio" id="answer" name="answer" value="maybe" />Maybe
+				<br/>
+				<br/>
+				<label for="comment">Comments:</label>
+				<br/>
+				<textarea id="comment" name="comment" rows="5" cols="40"></textarea>	
+				<br/>
+				<input type="checkbox" name="sign" value="yes" checked /> Sign me up for email updates
+				<br/>
+				<br/>
+				<input type="submit" value="Submit review" />
+			</fieldset>
+		</form>
 
-	</form>
-
-</body>
+	</body>
 </html>
