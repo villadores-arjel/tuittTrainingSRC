@@ -1,0 +1,24 @@
+#left
+{
+	text-align: left;
+}
+
+#right
+{
+	text-align: right;
+}
+
+.red
+{
+	color: red;
+}
+.imahe
+{
+	height: 150px;
+	width: 300px;
+	border-radius: 100px;
+}
+td
+{
+	border: 1px solid black;
+}
